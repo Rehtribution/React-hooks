@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 
 import StateHook from "./Components/useStateHook/stateHook";
-// import EffectHook from "./Components/useEffectHook/effectHook";
+import EffectHook from "./Components/useEffectHook/effectHook";
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='App'>
       <StateHook />
-      {/* <EffectHook /> */}
+      <EffectHook />
     </div>
   );
 }
