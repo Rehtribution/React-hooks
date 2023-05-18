@@ -24,6 +24,7 @@ function Effect() {
                 <button onClick={() => setType('photos')}>Photos</button>
             </div>
             <h1>{resourceType}</h1>
+        {/* The following will allow the corresponding data to populate on the page*/}
             {items?.map(item => {
                 return <pre>{JSON.stringify(item)}</pre>
             })}
@@ -33,3 +34,7 @@ function Effect() {
 
 }
 export default Effect;
+
+// Notes:
+// JSON placeholder guide https://jsonplaceholder.typicode.com/guide/
+// Key error https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key
