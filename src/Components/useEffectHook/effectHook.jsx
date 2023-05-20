@@ -5,7 +5,7 @@ import "./effectHook.css";
 // This demo version is using JSONPlaceholder API.
 function Effect() {
     //Here we are starting our state at posts.
-    const [resourceType, setType] = useState('posts')
+    const [resourceType, setType] = useState('albums')
     const [items, setItems] = useState()
 
     useEffect(() => {
@@ -19,7 +19,7 @@ function Effect() {
     return (
         <>
             <div className="effectQuery">
-                <button onClick={() => setType('posts')}>Posts</button>
+                {/* <button onClick={() => setType('posts')}>Posts</button> */}
                 <button onClick={() => setType('albums')}>Albums</button>
                 <button onClick={() => setType('photos')}>Photos</button>
             </div>

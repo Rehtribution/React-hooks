@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 // import useState from react
 import "./stateHook.css";
+import Sample from "../useMemoHook/memoHook";
+
 
 // demonstrating the use of the stateHook with a simple counter.
 // Starting the counter at 10.  We will call this function later to set the initial state.
 function startCount() {
     console.log('startCount has been run! Calling the funciton in this way will only run the function on the initial render.');
-    return 10
+    return 13
 }
 
 // This is our simple counter function. It will add and subtract by 1 from the state value.
@@ -21,6 +23,7 @@ function State() {
     // here the use of prevState allows the previous value to be passed into the function to decrement by 1. The next function works the same way to increment by 1.
         function incrementState() {
         alterState(prevState => prevState + 1)
+
     }
 
 
@@ -29,6 +32,7 @@ function State() {
         <button onClick={decrementState}>-</button>
         <span>{currentState}</span>
         <button onClick={incrementState}>+</button>
+        <Sample currentState={currentState}/>
         </>
     )
 

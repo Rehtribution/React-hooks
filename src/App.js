@@ -1,24 +1,20 @@
-// import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 
-import StateHook from "./Components/useStateHook/stateHook";
-import EffectHook from "./Components/useEffectHook/effectHook";
+import State from "./Components/useStateHook/stateHook";
+// import EffectHook from "./Components/useEffectHook/effectHook";
+// import Sample from "./Components/useMemoHook/memoHook";
 
 function App() {
 
 
   return (
     <div className='App'>
-      <StateHook />
-      <EffectHook />
+      <State />
+      {/* <EffectHook /> */}
+      {/* <Sample /> */}
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
